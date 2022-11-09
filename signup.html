@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/muddled-can-9800/styles/signup.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="homepage-slider" class="st-slider">
+
+    <input type="radio" class="cs_anchor radio" name="slider" id="slide1"/>
+    <input type="radio" class="cs_anchor radio" name="slider" id="slide2"/>
+    <input type="radio" class="cs_anchor radio" name="slider" id="slide3"/>
+    <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked=""/>
+    <div class="images">
+       <div class="images-inner">
+        <div class="image-slide">
+          <div class="image bg-yellow"><img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt=""></div>
+        </div>
+        <div class="image-slide">
+          <div class="image bg-blue"><img src="https://www.1mg.com/images/login-signup/Know-Your-Medicines.png" alt=""></div>
+        </div>
+        <div class="image-slide">
+          <div class="image bg-red"><img src="https://www.1mg.com/images/login-signup/Home-Delivery-of-Medicines.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="labels">
+        <div class="fake-radio">
+          <label for="slide1" class="radio-btn"></label>
+          <label for="slide2" class="radio-btn"></label>
+          <label for="slide3" class="radio-btn"></label>
+        </div>
+    </div>
+    <div id="signup">
+        <h1>Sign-up</h1>
+        <h3>Already have an account?</h3>
+        <a href="/muddled-can-9800/login.html">Login</a>
+        <label for="">name:</label>
+        <input type="text" placeholder="Enter your name" required id="name">
+        <label for="">email:</label>
+        <input type="email" placeholder="Enter your email" required id="email">
+        <label for="">password:</label>
+        <p>1.password should contain at least one special character(!@#&$)</p>
+        <p>2.password length should be eight or more</p>
+        <p>3.First character should be CAPITAL</p>
+        <input type="password" placeholder="Enter password" required id="password">
+        <label for="">mobile:</label>
+        <input type="number" placeholder="Enter your Mobile" required id="mobile">
+    </div>
+</div>
+<button id="confirm">Sign Up</button>
+</body>
+</html>
+
+<script src="/muddled-can-9800/scripts/signup.js"></script>

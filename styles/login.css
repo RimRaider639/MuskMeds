@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    width: 40%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+#container input{
+    height: 30px;
+    margin-bottom: 30px;
+    border-color: teal;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    width: 400px;
+}
+h1{
+    margin-bottom: 50px;
+    color: teal;
+}
+p{
+    margin-left: 420px;
+    text-decoration: underline;
+}
+a{
+    margin-left: 500px;
+    color: teal;
+    text-decoration: none;
+    font-size: 20px;
+}
+button{
+  text-decoration: none;
+  border: none;
+  background-color: rgb(100, 173, 173);
+  width: 200px;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+    background-color: rgb(0, 128, 128);
+}
