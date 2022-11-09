@@ -1,0 +1,72 @@
+#heading{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#filter{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+#filter>button{
+    min-width: 30px;
+    padding: 5px 8px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.card{
+    display: flex;
+    border: 1px solid black;
+}
+.med_img{
+    width: 50px;
+}
+.med_img>img{
+    width: 50px;
+}
+.med_text{
+    border: 1px solid black;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.card h3{
+    font-size: 14px;
+}
+.card p{
+    font-size: 12px;
+}
+
+.sec1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+}
+.add_to_cart{
+    width: 40px;
+    background-color: yellow;
+    float: right;
+}
+
+
+.active{
+    background-color: red;
+}
+
+
