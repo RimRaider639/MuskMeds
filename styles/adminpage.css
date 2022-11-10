@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+label{
+    font-size: 14px;
+}
+#add{
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+input{
+    height: 30px;
+    margin: 10px;
+    background-color: #FBF9FD;
+    border-color: #e9e6ec;
+    border-width: 1px;
+    padding: 3px;
+}
+#add_product{
+    float: right;
+    margin-right: 200px;
+    padding: 10px 100px;
+    border-color: #e9e6ec;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+#heading{
+    display: flex;
+    height: auto;
+    width: 30%;
+}
+#heading img{
+    width: 60%;
+    height: auto;
+    float: right;
+}
+#heading h2{
+    float: left;
+    color: teal;
+    margin:50px;
+    line-height: 16px;
+    margin-top: 54px;
+}#parent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -50px;
+}
+#parent p{
+    font-weight: bold;
+    color: teal;
+}
+h3{
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+span{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}

@@ -1,8 +1,6 @@
-import { navbar } from "../components/navbar.js";
+import { init } from "../components/commonFunc.js";
 
-let navbar_div = document.getElementById("navbar");
-
-navbar_div.innerHTML = navbar();
+init()
 
 
 document.getElementById("logo").addEventListener("click",Homepage);

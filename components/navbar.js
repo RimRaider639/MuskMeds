@@ -297,7 +297,7 @@ const navbar = () => {
         <button class="ddmenu">Health Resource Center <i class="arrow down"></i></button>
         <div id="hrc" class="dropdown-content">
             <a href="allProducts.html">All Diseases</a>
-            <a href="allProducts.html">All Medicines</a>
+            <a href="medicines.html">All Medicines</a>
             <a href="allProducts.html">Medicines by Therapeutic Class</a>
         </div>
     </div>
@@ -310,7 +310,7 @@ const navbar = () => {
             <a href="allProducts.html">Protien Supplements</a>
             <a href="allProducts.html">Omega Fish & Oil</a>
             <a href="allProducts.html">Immunity Boosters</a>
-            <a href="allProducts.html">Seciality Supplements</a>
+            <a href="allProducts.html">Speciality Supplements</a>
             <a href="allProducts.html">Weight Management</a>
         </div>
     </div>

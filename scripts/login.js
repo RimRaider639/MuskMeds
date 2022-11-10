@@ -12,6 +12,9 @@ btn.onclick=async ()=>{
       }else{
         if(details.password==password){
             alert('Login successfull');
+            window.location.href='/muddled-can-9800/home.html';
+            localStorage.setItem('user_details',JSON.stringify(details))
+            
         }else{
             alert('Wrong password')
         }

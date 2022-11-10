@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/muddled-can-9800/styles/adminpage.css">
+    <title>Admin Inventory</title>
+</head>
+<body>
+    <div id="parent">
+      <div id="heading">
+         <div><img src="/muddled-can-9800/img/output-onlinepngtools.png" alt=""></div>
+         <div><h2>MUSKmeds store!</h2></div>
+      </div>
+    <div id="welcome"><p>Welcome <i><span></span>!</i></p></div>
+    </div>
+    <h1>Add Product</h1>
+    <div id="add">    
+        <label for="name">name:</label>
+        <input type="text" id="name" placeholder="name of the product" required>
+        <label for="size">Pack-size:</label>
+        <input type="text" id="size" placeholder="Size of one pack" required>
+        <label for="Original price">Price:</label>
+        <input type="number" id="price" placeholder="Original price" required>
+        <label for="mrp">MRP:</label>
+        <input type="number" id="mrp" placeholder="mrp" required><br>
+        <label for="type">Type of Product:</label>
+        <input type="text" id="type" placeholder="eg;tables,capsules..." required>
+        <label for="image">Add image:</label>
+        <input type="file" id="image" required>
+        <label for="brand">brand:</label>
+        <input type="text" id="brand" placeholder="brand" required>
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="email" required>
+    </div>
+    <button id="add_product">Confirm</button><br>  
+    <h3>Your products</h3>
+    <div id="container"></div>
+</body>
+</html>
+
+<script src="/muddled-can-9800//scripts/adminpage.js"></script>

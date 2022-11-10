@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;   
+    color: rgba(148, 57, 57, 0.637);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#container{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+#container>div{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 40px;
+    margin-bottom: 20px;
+    border-color: rgba(148, 57, 57, 0.637);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+}
+button{
+    padding: 10px;
+    border: none;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(148, 140, 140);
+    cursor: pointer;
+    color: white;
+}
+#login p{
+    margin-bottom: 50px;
+    font-style: italic;
+    color: rgba(148, 57, 57, 0.637);
+    font-weight: bolder;
+}

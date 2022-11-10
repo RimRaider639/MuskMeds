@@ -1,4 +1,4 @@
-import { init, getData } from "./commonFunc.js";
+import { init, add_to_cart } from "../components/commonFunc.js";
 
 init()
 

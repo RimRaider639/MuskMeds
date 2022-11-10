@@ -61,11 +61,11 @@ class User{
         const name=document.getElementById('name').value;
         const email=document.getElementById('email').value;
         const password=document.getElementById('password').value;
-        const mobile=document.getElementById('moile').value;
+        const mobile=document.getElementById('mobile').value;
         user.signUp(name,email,password,mobile);
         console.log(user);
     }
     let signupbtn=document.getElementById("confirm");
     signupbtn.addEventListener("click",function(){
-      Register();
+      Register()
     });
