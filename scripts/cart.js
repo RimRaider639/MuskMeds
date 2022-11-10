@@ -1,3 +1,11 @@
+import { navbar } from "../components/navbar.js";
+
+let navbar_div = document.getElementById("navbar");
+
+navbar_div.innerHTML = navbar();
+
+
+
 const pro={
     "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/j4vwgeja6thehccimpbs.png",
     "Name": "Tata 1mg Glucosamine HCL 1500 mg Tablets for Joint Health",
