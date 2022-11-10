@@ -1,7 +1,38 @@
+#container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+#change{
+    width: 40%;
+    border: 1px solid black;
+    padding: 20px 10px;
+}
+#filters h4,input, hr{
+    margin-bottom: 5px;
+}
+#allBrands{
+    border:1px solid black;
+    overflow-y: scroll;
+    height: 400px;
+    width: 100%;
+    /* padding: 10px; */
+}
+#allBrands>div{
+    display: flex;
+    justify-content: space-between;
+}
+#allBrands h5:nth-child(2){
+    flex-grow: 1;
+    margin-left: 5px;
+}
 #products{
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    border: 1px solid black;
 }
 .card{
     border: 1px solid black;
