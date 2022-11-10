@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/muddled-can-9800/styles/adminlogin.css">
+    <title>admin</title>
+</head>
+<body>
+    <h1>Are you an Admin?<i style="font-size: 20px;">Please create an account here!</i></h1>
+    <div id="container">
+      <div id="signup">
+        <label for="">name:</label>
+        <input type="text" placeholder="Enter your name" required id="name">
+        <label for="">email:</label>
+        <input type="email" placeholder="Enter your email" required id="email">
+        <label for="">password:</label>
+        <p>1.password should contain at least one special character(!@#&$)</p>
+        <p>2.password length should be eight or more</p>
+        <p>3.First character should be CAPITAL</p>
+        <input type="password" placeholder="Enter password" required id="password">
+        <label for="">mobile:</label>
+        <input type="number" placeholder="Enter your Mobile" required id="mobile">
+        <button id="confirm">Sign Up</button>
+      </div>
+      <div id="login">
+        <p>Login with your existing account!</p>
+        <label for="email">email:</label>
+        <input type="email" placeholder="Enter your email" id="loginemail">
+        <label for="password">password:</label>
+        <input type="password" placeholder="Enter your password" id="loginpassword">
+        <button id="submit">Login</button>
+       </div>
+    </div>
+</body>
+</html>
+<script src="/muddled-can-9800/scripts/adminlogin.js"></script>
