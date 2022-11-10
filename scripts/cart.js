@@ -5,6 +5,10 @@ let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar();
 
 
+document.getElementById("logo").addEventListener("click",Homepage);
+function Homepage(){
+    window.location.href="./home.html"
+}
 
 const pro={
     "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/j4vwgeja6thehccimpbs.png",
