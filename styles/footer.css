@@ -1,0 +1,87 @@
+
+#footer{
+    width: 100%;
+    height:700px;
+    box-sizing: border-box;
+    background-color:rgb(255,252,248);
+    border-bottom:1px solid rgba(27, 31, 35, 0.15);
+    border-top:1px solid rgba(27, 31, 35, 0.15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer-top{
+    width: 90%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(255,252,248) ;
+    line-height: 10px ;
+    border-bottom:1px solid rgba(27, 31, 35, 0.15);
+    margin: auto;
+    padding: 40px;
+}
+#footer-top a{
+    text-decoration: none;
+    color: black;
+}
+#footer-top h3{
+    margin-bottom: 30px;
+}
+#cntlinks{
+    display: flex;
+    width: 15%;
+    gap:1px
+}
+#cntlinks img:hover{
+    cursor: pointer;
+}
+#signup2{
+    width: 80px;
+    background-color:#FF6F61 ;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+#signup2:hover{
+    cursor: pointer;
+}
+#apps img{
+    width: 50%;
+}
+#apps img:hover{
+    cursor: pointer;
+}
+
+
+/* --------------------------------------------------- */
+
+#footer-mid{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(255,252,248) ;
+    line-height: 20px ;
+    border-bottom:1px solid rgba(27, 31, 35, 0.15);
+    margin: auto;
+}
+#footer-mid>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* --------------------------------------------------- */
+
+#footer-bottom{
+    width: 80%;
+    height: 20%;
+    background-color:rgb(255,252,248) ;
+    line-height: 40px;
+    margin: auto;
+    text-align: center;
+}
+#footer-bottom img{
+    width: 7%;
+    margin-top: 30px;
+}
