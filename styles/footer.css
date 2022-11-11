@@ -17,13 +17,13 @@
     line-height: 20px ;
     border-bottom:1px solid rgba(27, 31, 35, 0.15);
     margin: auto;
-    padding: 40px;
+    padding: 60px;
 }
 #footer-top a{
     text-decoration: none;
     color: black;
 }
-#footer-top h3{
+#footer-top h4{
     margin-bottom: 30px;
 }
 #cntlinks{
@@ -56,7 +56,7 @@
 /* --------------------------------------------------- */
 
 #footer-mid{
-    width: 90%;
+    width: 96%;
     height: 25%;
     display: flex;
     justify-content: space-around;
@@ -66,11 +66,17 @@
     border-bottom:1px solid rgba(27, 31, 35, 0.15);
     margin: auto;
 }
+#footer-mid h2{
+    margin-bottom: 20px;
+}
 #footer-mid>div{
     display: flex;
-    justify-content: space-around;
+    width: 20%;
     align-items: center;
+    font-weight: lighter;
+    font-size: smaller;
 }
+
 /* --------------------------------------------------- */
 
 #footer-bottom{
