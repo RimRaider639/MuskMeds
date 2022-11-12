@@ -23,6 +23,9 @@
 #header{
     display: flex;
 }
+#header:hover{
+    cursor: pointer;
+}
 #sidescreen{
     width: 34%;
 }
