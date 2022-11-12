@@ -105,12 +105,12 @@
 
 
 
-.top-fb1{
+.top-card{
     width: 100%;
     height: 300px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
 }
-#heading-fb1{
+.headings{
     width: 1300px;
     background-color:#F6F6F6 ;
     display: flex;
@@ -118,6 +118,7 @@
     height: 80px;
     align-items: center;
     padding: 0px 110px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 #card-fb1{
     width: 80%;
@@ -125,6 +126,7 @@
     display: grid;
     grid-template-columns: repeat(7,1fr);
     margin: auto;
+    
 }
 #card-fb1 a {
     text-decoration: none;
@@ -139,11 +141,56 @@
 #card-fb1 img{
     border-radius: 10px;
 }
-#see-all{
-    width: 100px;
+.see-all{
+    width: 60px;
     background-color: #FF6F61;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     color: white;
+    font-size: 14px;
+}
+
+
+#card-fbhd{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+#card-fbhd img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+#top-fbhd{
+    width: 100%;
+    height: 260px;
+}
+#Pathology img{
+    margin-top: 20px;
+}
+#top-omega-oil{
+    height: 450px;
+}
+
+#card-omega-oil{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    
+
+}
+#card-omega-oil img{
+    width: 112%;
+    border-radius: 10px;
+    height: 100%;
 }
