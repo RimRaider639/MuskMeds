@@ -102,3 +102,48 @@
     margin-top:25px;
 }
 
+
+
+
+.top-fb1{
+    width: 100%;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#heading-fb1{
+    width: 1300px;
+    background-color:#F6F6F6 ;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0px 110px;
+}
+#card-fb1{
+    width: 80%;
+    height: 73%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin: auto;
+}
+#card-fb1 a {
+    text-decoration: none;
+    color:black;
+    
+}
+#card-fb1 a:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    height: 100%;
+}
+#card-fb1 img{
+    border-radius: 10px;
+}
+#see-all{
+    width: 100px;
+    background-color: #FF6F61;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
