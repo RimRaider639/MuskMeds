@@ -10,55 +10,133 @@
 <body>
     <!-- navbar -->
     <div id="navbar">
-        <div>
-            <img class="logo" src="https://i.ibb.co/PgBWbvX/Screenshot-20221109-142252.pngg" alt=""/>
+      <div>
+          <img class="logo" src="https://i.ibb.co/PgBWbvX/Screenshot-20221109-142252.pngg" alt=""/>
+      </div>
+      <div><input type="text" placeholder="Search for Medicines and Health Products"></div>
+      <div><h5>Need Help?</h5></div>
+  </div>
+<!-- navbar-end -->
+
+  <div id="page-title"><p>Order Summary</p></div>
+
+  <!-- containers section -->
+  <div id="container">
+    <!-- First Container -->
+    <div>
+      <p>Items NOT Requiring Prescription: (<span id="total-items1"></span>)</p>
+
+      <div id="items1">
+        <!--card div<-->
+        <div id="items-img1">
+          <img src="" alt="" />
         </div>
-        <div><input type="text" placeholder="Search for Medicines and Health Products"></div>
-        <div><h5>Need Help?</h5></div>
+
+        <div id="items-details1">
+          <div>
+            <p><span id="prod-name1"></span></p>
+            <p>₹<span id="prod-price1"></span></p>
+          </div>
+          <div>
+            <p><span id="pack-size1"></span></p>
+          </div>
+          <div>
+            <br>
+            <br>
+            <div id="inc-rmv1">
+              <button id="plus1">+</button><span id="">  </span><button id="minus">-</button>
+              <button id="remove1">remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <div>
+        <p>Items Requiring Prescription:  (<span id="total-items2"></span>)</p>
+        <div id="items2">
+          <!--card div<-->
+          <div id="items-img2">
+            <img src="" alt="" />
+          </div>
+          <div id="items-details2">
+            <div>
+              <p><span id="prod-name2"></span></p>
+              <p>₹<span id="prod-price2"></span></p>
+            </div>
+            <div>
+              <p><span id="pack-size2"></span></p>
+            </div>
+            <div>
+              <br>
+              <br>
+              <div id="inc-rmv2">
+                <button id="plus">+</button><span id="">  </span><button id="minus">-</button>
+                <button id="remove2">remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer-text">
+        <hr />
+        <p>
+          Tata 1mg is a technology platform to facilitate transaction of business. The products and services are offered for sale by the sellers. The user authorizes the delivery personel to be his agent for delivery of the goods. For details read terms and conditions.
+        </p>
+      </div>
     </div>
 
-    <div id="page-title"><p>Order Summary</p></div>
 
-    <!-- containers section -->
-    <div id="container">
-      <!-- First Container -->
+
+    <!-- Second Container -->
+    <div id="second-container">
+      <!-- <p>Select Address</p> -->
       <div>
-        <p>Your Items</p>
-        <div id="items">
-          <!--card div<-->
-          <div id="items-img">
-            <img
-              src=""
-              alt=""
-            />
+        <p>Fill Address</p>
+        <h4 class="orange">CHANGE</h4>
+      </div>
+      <!-- second container full details -->
+      <div>
+        <div id="address-details">
+          <!-- type your content here-->
+          <input id="add" type="text" placeholder="Delivery Address">
+          <br>
+          <br>
+          <p>4, Mili, T H Kataria Mrg, Goa Portugis Hotel, Mahim</p>
+          <p>DELHI</p>
+        </div>
+        <div>
+  
+        </div>
+        <div id="price-details">
+          <div>
+            <p>Item Total</p>
+            <h5 id="total-mrp">₹<span id="prod-total"></span></h5>
           </div>
-          <div id="items-details">
-            <div>
-              <p><span id="prod-name">Product Name</span></p>
-              <p><span id="prod-price"></span></p>
-            </div>
-            <div>
-              <p> <span id="pack-size"></span></p>
-              <!-- <p>
-                MRP<span style="text-decoration: line-through">₹1230.12</span>
-              </p> -->
-            </div>
-            <div>
-              <div>
-                <!-- <i class="fa-solid fa-trash-can"></i>
-              <p style="font-size: smaller">Remove</p> -->
-              </div>
-              <br>
-              <br>
-              <div>
-                <button id="rmv">remove</button>
-                <!-- <i class="fa-solid fa-circle-minus"></i> -->
-                <!-- <p>NeuCoins earned :</p>
-                <p class="bold">10</p> -->
-                <!-- <i class="fa-solid fa-circle-plus"></i> -->
-              </div>
-            </div>
+          <div>
+            <p>Price Discount</p>
+            <h5><span id="prod-discount"></span>%</h5>
           </div>
+          <div>
+            <p>Shipping Fee</p>
+            <h5>₹0</h5>
+          </div>
+          <div>
+            <h5>To be paid</h5>
+            <h5>₹<span id="paid-price"></span></h5>
+          </div>
+          <div>
+            <p>Total Savings</p>
+            <h5>₹<span id="saved">246</span></h5>
+          </div>
+        </div>
+        </div>
+        <div id="checkout">
+
+          <div id="payment-btn"><p>PROCEED TO PAYMENT</p></div>
         </div>
 
         <div class="footer-text">
@@ -66,98 +144,21 @@
           <p>
             *NeuCoins will be credited 7 days after your complete order is
             delivered in case of Products and in case of Lab Services NeuCoins
-            will be credited within 24 hours from the time of generation of test
-            report. NeuCoins will not be credited in case a return request is
-            initiated for the order. NeuCoins are rounded to the nearest integer
-            and the value of NeuCoins earned may change if total order value
-            changes. <br /><br />
-            **Coupon Discount value may change if the total order value changes.
-            <br /><br />***Items in your cart will always reflect the most
-            recent price as compared to the prices in their product detail page.
+            will be credited within 24 hours from the time of generation of
+            test report. NeuCoins will not be credited in case a return
+            request is initiated for the order. NeuCoins are rounded to the
+            nearest integer and the value of NeuCoins earned may change if
+            total order value changes.
+            <br /><br />**Coupon Discount value may change if the total order
+            value changes. <br /><br />
+            ***Items in your cart will always reflect the most recent price as
+            compared to the prices in their product detail page.
           </p>
         </div>
       </div>
-      <!-- Second Container -->
-      <div id="second-container">
-        <!-- <p>Select Address</p> -->
-        <div>
-          <p>Fill Address</p>
-          <h4 class="orange">CHANGE</h4>
-        </div>
-        <!-- second container full details -->
-        <div>
-          <div id="address-details">
-            <!-- type your content here-->
-            <input id="add" type="text" placeholder="Delivery Address">
-            <br>
-            <br>
-            <p>4, Mili, T H Kataria Mrg, Goa Portugis Hotel, Mahim</p>
-            <p>DELHI</p>
-          </div>
-          <div>
-            <!-- <div>
-              <img
-                src="https://res.cloudinary.com/du8msdgbj/image/upload/v1607414999/marketing/cvtnx1zh5we6atn3m7i0.svg"
-                alt=""
-              />
-              Apply Coupon
-            </div>
-            <div><i class="fa-solid fa-circle-chevron-right"></i></div> -->
-          </div>
-          <div id="price-details">
-            <div>
-              <p>Item Total</p>
-              <p id="total-mrp"><b><span id="prod-total"></span></b></p>
-            </div>
-            <div>
-              <p>Price Discount</p>
-              <p><span id="prod-discount"><b>24%</b></span></p>
-            </div>
-            <div>
-              <p>Shipping Fee</p>
-              <p><b>₹0</b></p>
-            </div>
-            <div>
-              <h5>To be paid</h5>
-              <h5><span id="paid-price"></span></h5>
-            </div>
-            <div>
-              <p>Total Savings</p>
-              <h5>₹<span id="savings">246</span></h5>
-            </div>
-          </div>
-          </div>
-          <div id="checkout">
-            <!-- <div>
-              <p>Your Delivery Location</p>
-              <p>
-                <i class="fa-solid fa-location-dot"></i>
-                <span class="orange">Delhi</span>
-              </p>
-            </div> -->
-            <div id="payment-btn"><p>PROCEED TO PAYMENT</p></div>
-          </div>
-
-          <div class="footer-text">
-            <hr />
-            <p>
-              *NeuCoins will be credited 7 days after your complete order is
-              delivered in case of Products and in case of Lab Services NeuCoins
-              will be credited within 24 hours from the time of generation of
-              test report. NeuCoins will not be credited in case a return
-              request is initiated for the order. NeuCoins are rounded to the
-              nearest integer and the value of NeuCoins earned may change if
-              total order value changes.
-              <br /><br />**Coupon Discount value may change if the total order
-              value changes. <br /><br />
-              ***Items in your cart will always reflect the most recent price as
-              compared to the prices in their product detail page.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
 <script src="https://kit.fontawesome.com/7e4208235c.js"
   crossorigin="anonymous"

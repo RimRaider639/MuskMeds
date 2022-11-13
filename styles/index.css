@@ -1,0 +1,199 @@
+
+#carousel {
+  position: relative;
+  width: 69%;
+  height: 210px;
+  overflow: hidden;
+  background-color: #cdcdcd;
+}
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    border: 0px solid #2e2e2e;
+    top: 0;
+    left: 100%;
+}
+.carousel-item.active {
+      left: 0;
+      transition: all 0.5s ease-out;
+}
+.carousel-item img{
+    width: 100%;
+}
+#header{
+    display: flex;
+}
+#header:hover{
+    cursor: pointer;
+}
+#sidescreen{
+    width: 34%;
+}
+#sidescreen img{
+    width: 100%;
+    height: 100%;
+}
+
+#intro{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+#cardbox{
+    width: 100%;
+}
+#topcard{
+    width: 100%;
+    background-color:#F6F6F6 ;
+    height: 220px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#topcard1{
+    width: 85%;
+    line-height: 20px;
+    margin: auto;
+    font-weight: 300;
+    font-size: 18px;
+    
+}
+#topcard1 img{
+    width: 100%;
+    margin-top:3%;
+    margin-bottom:20px;
+}
+
+
+#sbhd1{
+    width: 100%;
+    height: 210px;
+}
+.top-sbhd1{
+    width: 100%;
+    height: 210px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#card-sbhd1{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin: auto;
+}
+#card-sbhd1 a {
+    text-decoration: none;
+    color:black;
+    
+}
+#card-sbhd1 a:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    height: 100%;
+}
+.innercard{
+    width: 120px;
+    text-align: center;
+    margin: auto;
+    font-size:smaller;
+    line-height: 25px;
+}
+.innercard img{
+    width: 100%;
+    margin-top:25px;
+}
+
+
+
+
+.top-card{
+    width: 100%;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+}
+.headings{
+    width: 1300px;
+    background-color:#F6F6F6 ;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0px 110px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+#card-fb1{
+    width: 80%;
+    height: 73%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin: auto;
+    
+}
+#card-fb1 a {
+    text-decoration: none;
+    color:black;
+    
+}
+#card-fb1 a:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    height: 100%;
+}
+#card-fb1 img{
+    border-radius: 10px;
+}
+.see-all{
+    width: 60px;
+    background-color: #FF6F61;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+
+#card-fbhd{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+#card-fbhd img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+#top-fbhd{
+    width: 100%;
+    height: 260px;
+}
+#Pathology img{
+    margin-top: 20px;
+}
+#top-omega-oil{
+    height: 450px;
+}
+
+#card-omega-oil{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    
+
+}
+#card-omega-oil img{
+    width: 112%;
+    border-radius: 10px;
+    height: 100%;
+}
