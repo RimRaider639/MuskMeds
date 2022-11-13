@@ -42,6 +42,7 @@ body{
 }
 .card{
     padding: 0 20px 20px 20px;
+    height: 340px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -57,12 +58,12 @@ body{
 /* img div */
 .card>div:nth-child(1){
     width: 100%;
-    height: 200px;
+    height: 170px;
     padding: 40px 0;
 }
 .card img{
-    max-width: 100%;
-    height: 150px;
+    max-width: 90%;
+    height: 110px;
     display: block;
     margin: auto;
     object-fit: cover;
@@ -86,11 +87,17 @@ body{
     margin-right: 20px;
     position: relative; 
     width: 25%;
+    align-items: center;
     
 }
 #sorting p{
     margin-right: 10px;
     flex-grow: 1;
+}
+#sort{
+    border:none;
+    height: 35px;
+    border-radius: 2px;
 }
 
 #show_applied_filters{
@@ -105,9 +112,11 @@ body{
 .filTags{
     border: 1px solid rgb(255,111,97);
     font-size: 12px;
-    margin: 5px;
-    padding: 5px 10px;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
 }
 
 
@@ -143,5 +152,9 @@ body{
 #fill {
   font-variation-settings:
   'FILL' 1,
+  
 
+}
+.material-symbols-outlined{
+    width: 30px;
 }
