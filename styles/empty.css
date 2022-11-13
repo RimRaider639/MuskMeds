@@ -1,0 +1,47 @@
+body{
+    margin: 0%;
+}
+
+
+#navbar {
+    display: flex;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: space-around;
+    height: 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  #navbar>div>input{
+    margin-top: 18px;
+    width: 900px;
+    height: 28px;
+    background-color: #F1F4F6;
+    border: none;
+  }
+
+  .logo {
+    width: 150px;
+    margin-top: 3%;
+    margin-left: 5%;
+  }
+
+#container{
+    display: flex;
+    height: 670px;
+    background-color: rgb(247, 244, 244);
+    justify-content: center;
+}
+
+#container>div>img{
+    margin-top: 100px;
+    width: 150px;
+}
+
+#container>div>button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    background-color: #ff6f61;
+}
