@@ -356,6 +356,7 @@ const appendProducts = (data, selector) => {
         rating.classList.add('rating')
         if (prod.rating=="Nan"){
             rating.style.display = "none"
+            
         }
         
         let strikeout = document.createElement('p')
