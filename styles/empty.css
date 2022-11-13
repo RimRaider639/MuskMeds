@@ -45,3 +45,8 @@ body{
     border-radius: 10px;
     background-color: #ff6f61;
 }
+
+#container>div>button>a{
+  text-decoration: none;
+  color: white;
+}

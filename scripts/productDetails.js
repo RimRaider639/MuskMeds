@@ -1,24 +1,15 @@
-import { init } from "../components/commonFunc.js";
+import { init, getData, add_to_cart } from "../components/commonFunc.js";
 
 init()
 
-const pro={
-    "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/j4vwgeja6thehccimpbs.png",
-    "Name": "Tata 1mg Glucosamine HCL 1500 mg Tablets for Joint Health",
-    "rating_count": "284 ratings",
-    "rating": 4.1,
-    "price": 995,
-    "mrp": 399,
-    "type": "tablets",
-    "image": "https://onemg.gumlet.io/images/c_fit,h_150,w_150,q_auto,f_auto/twpuzix7nrwivbtg0n80/healthkart-hk-vitals-biotin-tablet.jpg",
-    "brand": "Tata",
-    "id": "7371.755486130691Tata",
-    "discount": 60,
-    "stock": 41,
-    "gender": "Unisex"
-  }
+const prod_url = 'https://infinite-river-74709.herokuapp.com/products/'
+const cart_url = 'https://infinite-river-74709.herokuapp.com/cart/'
+const prod_id = localStorage.getItem('productID')
+let product;
+const myFunction = async () => {
+    const pro = await getData(prod_url+prod_id)
+    product = pro
 
-const myFunction = (pro) => {
     const img = document.querySelector("#container>div img");
     img.src=pro.image;
 
@@ -29,7 +20,13 @@ const myFunction = (pro) => {
     pack.innerText=pro.pack_size;
 
     const rate=document.querySelector("#rating");
-    rate.innerText=pro.rating;
+
+    if (pro.rating!='Nan'){
+      rate.innerText=pro.rating;
+
+    }else{
+      rate.style.display = 'none'
+    }
 
     const rateCount=document.querySelector("#rating_count");
     rateCount.innerText=pro.rating_count;
@@ -47,4 +44,11 @@ const myFunction = (pro) => {
     radio2m.innerText=pro.mrp;
 }
 
-myFunction(pro)
+
+document.getElementById('cart_btn').onclick = () => {
+  add_to_cart(product, cart_url)
+}
+
+myFunction()
+
+

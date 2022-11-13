@@ -34,40 +34,49 @@ body{
 
 /* summary section */
 #page-title {
-  margin-left: 12%;
+  width: 70%;
+  margin: auto;
   color: #212121;
   font-weight: 500;
   font-size: 18px;
 }
 
-/* Container */
-#container {
-  height: auto;
-  width: 1200px;
-  margin: auto;
-  margin-top: -10px;
-  margin-left: 11%;
+#whole{
   display: flex;
-  justify-content: space-between;
+  width: 70%;
+  margin: auto;
 }
 
+/* Container */
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin-right: 20px;
+}
 
-#container > div:nth-child(1) {
-  /* border: 1px solid blue; */
+#second-container{
+  display: flex;
+  flex-direction: column;
+}
+
+/* #container > div:nth-child(1) {
+   border: 1px solid blue; 
   height: auto;
   width: 620px;
 }
 
-/* cards */
+cards 
 #container > div:nth-child(1) > p {
   margin-left: 15px;
   margin-bottom: 2%;
   margin-top: 3%;
   color: #333;
   font-size: 15px;
-}
+} */
 
-#items1 {
+/* #items1 {
   border: 1px solid blue;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -76,7 +85,7 @@ body{
   margin: auto;
   padding: 2%;
   display: flex;
-}
+} */
 
 #items-img1 img {
   /* border: 1px solid red; */
@@ -439,7 +448,7 @@ text-align: right;
 
 .footer-text {
   /* border: 1px solid red; */
-  width: 94%;
+  width: 100%;
   margin: auto;
   margin-top: 10%;
   font-size: 10px;
@@ -497,4 +506,11 @@ background-color: #ff6f61;
 
 .orange:hover{
   color: #ff6f61;
+}
+
+
+.prod{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
 }
