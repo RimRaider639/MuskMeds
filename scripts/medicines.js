@@ -39,30 +39,39 @@ const appendMeds = async (data) => {
     data.forEach(med => {
         let card = document.createElement('div')
         card.classList.add('card')
+
         let imgSec = document.createElement('div')
         let img = document.createElement('img')
         img.src = images[Math.floor(Math.random()*images.length)]
         imgSec.classList.add('med_img')
         imgSec.append(img)
+
         let textSec = document.createElement("div")
         textSec.classList.add('med_text')
+
         let head = document.createElement('div')
         head.classList.add('sec1')
+
         let title = document.createElement('h3')
         title.innerText = med.Name
+
         let price = document.createElement('h3')
-        price.innerText = med.mrp
+        price.innerText ="MRP ₹"+med.mrp
+
         head.append(title, price)
+
         let size = document.createElement('p')
         size.innerText = med.pack_size
+
         med.manufacturer = manufacturers[Math.floor(Math.random()*manufacturers.length)]
         let ltd = document.createElement('p')
         ltd.innerText = med.manufacturer
+
         let add = document.createElement('button')
         add.onclick = () => {
             //add to cart
         }
-        add.innerText = 'Add'
+        add.innerText = 'ADD'
         add.classList.add('add_to_cart')
         textSec.append(head, size, ltd, add)
         card.append(imgSec, textSec)
