@@ -283,12 +283,15 @@ height: 25px;
 }
 
 #addCard button{
+cursor: pointer;
 width: 83%;
 height: 40px;
-background-color: rgb(246, 86, 71);
+background-color: #ff6f61;
 margin-left: 30px;
 border: none;
 border-radius: 5px;
+color:white;
+
 }
 
 

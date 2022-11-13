@@ -32,14 +32,19 @@ const init = () => {
     })
     document.getElementById("cart").addEventListener("click",OpenCart);
     function OpenCart(){
-        window.location.href="./cart.html"
+        window.location.href="./checkout.html"
     }
     document.getElementById("logo").addEventListener("click",Homepage);
     function Homepage(){
-        window.location.href="./home.html"
+        window.location.href="./index.html"
+    }
+    document.getElementById('login').onclick = () => {
+        window.location.href = "./login.html"
+    }
+    document.getElementById('signup').onclick = () => {
+        window.location.href = "signup.html"
     }
     document.getElementById('findProd').onclick = () => {
-        console.log('works')
         searchKey("search", PRODUCT_URL, "#products")
     }
     document.getElementById("footer").innerHTML = footer();
@@ -315,12 +320,14 @@ const changeQtd = async (id, url, change='+') => {
     url = url+id
     try{
         let prod = await getData(url)
+        console.log(prod)
         change=='-'?+prod.qtd--:+prod.qtd++
         if (prod.qtd){
             patchCartItems(prod, url)
         } else {
             remove_from_cart(url)
         }
+        return 1
     }catch(err){
         console.log(err)
     }
@@ -334,6 +341,7 @@ const appendProducts = (data, selector) => {
     data.forEach(prod => {
         let card = document.createElement('div')
         card.classList.add('card')
+        
         let imgSec = document.createElement('div')
         let img = document.createElement('img')
         img.src = prod.image
@@ -363,6 +371,7 @@ const appendProducts = (data, selector) => {
         add.classList.add('add_to_cart')
         add.onclick = () => {
             add_to_cart(prod, CART_URL)
+            alert('Succesfully Added!')
         }
         imgSec.append(img)
         bottom.append(mrp, add)
@@ -370,7 +379,14 @@ const appendProducts = (data, selector) => {
         card.append(imgSec, txtSec, bottom)
         container.append(card)
 
-        
+        imgSec.onclick = () => {
+            localStorage.setItem('productID', prod.id)
+            window.location.href = "productDetails.html"
+        }
+        txtSec.onclick = () => {
+            localStorage.setItem('productID', prod.id)
+            window.location.href = "productDetails.html"
+        }
     })
     
     
@@ -448,4 +464,4 @@ const filter = (data, attr, value) => {
 
 
 
-export {init, getData, appendProducts, categorizeURL, sortNum, sortStr, add_to_cart, filter,appendLabel, LabelType}
+export {init, getData, appendProducts, categorizeURL, sortNum, sortStr, add_to_cart, filter,appendLabel, LabelType, changeQtd, remove_from_cart}

@@ -5,7 +5,7 @@ init()
 
 let url = "https://infinite-river-74709.herokuapp.com/products?"
 
-let cat = localStorage.getItem('clickedCat') 
+let cat = localStorage.getItem('clickedCat') || 'Vitamins & Supplements'
 document.getElementById('cat_heading').innerText = cat
 document.querySelector('title').innerText = cat
 url = categorizeURL(url, cat)
