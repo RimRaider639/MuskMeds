@@ -4,22 +4,28 @@ const pro={
     "pack_size": "bottle of 60 tablets",
     "rating_count": "284 ratings",
     "rating": "3.1",
-    "price": "₹995",
-    "mrp": "₹399"
+    "price": "995",
+    "mrp": "399",
+    "discount": 60,
 }
+// ₹
+let count=0;
 
 const myFunction = (pro) => {
-    const img = document.querySelector("#container>div>#items>#items-img>img");
+    const img = document.querySelector("#container>div>#items1>#items-img1>img");
     img.src=pro.image;
 
-    const name=document.querySelector("#prod-name");
+    const name=document.querySelector("#prod-name1");
     name.innerText=pro.Name;
 
-    const pack=document.querySelector("#pack-size");
+    const pack=document.querySelector("#pack-size1");
     pack.innerText=pro.pack_size;
 
-    const prc=document.querySelector("#prod-price");
+    const prc=document.querySelector("#prod-price1");
     prc.innerText=pro.price;
+
+    const dscnt=document.querySelector("#prod-discount");
+    dscnt.innerText=pro.discount;
 
     const total=document.querySelector("#prod-total");
     total.innerText=pro.price;
@@ -27,10 +33,16 @@ const myFunction = (pro) => {
     const paid=document.querySelector("#paid-price");
     paid.innerText=pro.mrp;
 
+    // const saved=document.querySelector("#saved");
+    // saved.innerText=save;
+
+    // let save=pro.price - pro.mrp;
+    // console.log(save);
+
+    count++;
+
 }
 
 myFunction(pro)
-
-let address=document.getElementById("add").value;
-let dis=document.getElementById("see");
-dis.innerText=address;
+let num=document.getElementById("total-items");
+num.innerText=count;

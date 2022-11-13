@@ -1,0 +1,321 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+#navbar{
+  border:0px solid red;
+  height: 140px;
+  width: 100%;
+  box-sizing: border-box;
+}
+#navbar>div{
+  height: 33%;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(27, 31, 35, 0.15);
+  justify-content: space-between;
+}
+#navbar>div>div{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+}
+#navbar>#nav-top>div>div{
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+#navbar>#nav-mid>div>div{
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+#navbar>#nav-top>div>div>div{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+#navbar>#nav-mid>div>div>div{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+#navbar>#nav-mid>div>div>:hover{
+  color:rgb(255,111,97) ;
+  cursor: pointer;
+}
+#navbar>#nav-top>div>div>:hover{
+  color:rgb(255,111,97) ;
+  cursor: pointer;
+}
+/* -------------------------------------------------------- */
+#logo img{
+  width: 100%;
+  height: 180%;
+  margin-top: -12px;
+}
+#content{
+  font-weight: 600;
+}
+#lt2{
+  background-color: rgb(255,111,97);
+  color: white;
+  padding: 1px 5px;
+  border-radius: 1px;
+}
+
+#cp2{
+  background-color: rgb(255,111,97);
+  color: white;
+  padding:1px 5px;
+  border-radius: 1px;
+}
+#profiles{
+  margin-right: 15px;
+}
+#cart{
+  margin-right: -80px;
+}
+#cart img{
+  width: 20%;
+  border: 2px solid rgb(255,111,97);
+  border-radius: 5px;
+}
+/* -------------------------------------------------------------- */
+#mid-left{
+  display: flex;
+  align-items: center;
+  width: 66%;
+}
+#location-div{
+  background-color: rgb(241,244,246);
+  border-radius: 2px;
+  padding: 5px;
+  height: 90%;
+  display: flex;
+  width: 25%;
+  margin-left: 50px;
+}
+#country{
+  border:none;
+  background-color: rgb(241,244,246);
+  width: 70%;
+}
+#search-div{
+  background-color: rgb(241,244,246);
+  padding: 5px;
+  height: 90%;
+  width: 75%;
+  margin-left: 0px;
+  color: black;
+}
+#search{
+  border: none;
+  background-color:rgb(241,244,246) ;
+  width: 90%;
+  color: black;
+}
+#mid-right{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+#quick-order{
+  background-color:rgb(255,111,97) ;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 0px 5px 40px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 30%;
+}
+/* ------------------------------------------------- */
+#nav-bottom{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+/* ------------------------------------------------- */
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.ddmenu {
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  border:none;
+}
+
+
+.ddmenu:hover, .ddmenu:focus {
+  color:rgb(255,111,97);
+}
+.wdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.wdropdown-wcontent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  z-index: 1;
+  margin-top: 37px;
+}
+
+.wdropdown-wcontent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.wdropdown-wcontent a:hover {
+  background-color: #ddd;
+}
+
+
+.show {display:block;}
+
+#container{
+  margin: auto;
+  width: 90%;
+  margin-top: 50px;
+  display: flex;
+}
+
+#container>div{
+  width: 33%;
+  height: 700px;
+}
+
+
+#ratingSection{
+  display: flex;
+}
+
+#ratingSection>#rating{
+  width: 50px;
+  color: white;
+  border: none;
+  background-color: green;
+}
+
+#rating_count{
+  color: rgb(240, 37, 37);
+}
+
+#highLight{
+  margin-left: 20px;
+}
+
+#bill{
+  margin: auto;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
+#radio1{
+  display: flex;
+  justify-content: first baseline;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#pr{
+color: rgb(163, 161, 161);
+}
+
+#dis{
+color: green;
+}
+
+#radio2{
+  display: flex;
+  justify-content: first baseline;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#taxe{
+  margin-left: 30px;
+}
+
+#pack{
+display: flex;
+margin-left: 30px;
+}
+
+#combo{
+width: 150px;
+height: 25px;
+}
+
+#addCard button{
+width: 83%;
+height: 40px;
+background-color: rgb(246, 86, 71);
+margin-left: 30px;
+border: none;
+border-radius: 5px;
+}
+
+
+#grn{
+  color: green;
+}
+
+#delivery{
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  padding-top: 20px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+}
+
+#footer1{
+  height: 100px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+#footer1>h3{
+  margin-top: 20px;
+}
+
+#footer>p{
+  color: gray;
+}

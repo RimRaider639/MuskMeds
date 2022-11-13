@@ -133,6 +133,7 @@
     background-color:rgb(241,244,246) ;
     width: 90%;
     color: black;
+    outline: none;
 }
 #mid-right{
     display: flex;
@@ -182,7 +183,7 @@
   padding: 1px;
   font-size: 13px;
   border: none;
-  background-color: white;
+  background-color:white ;
 }
 
 .dropdown {

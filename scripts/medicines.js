@@ -4,6 +4,7 @@ init()
 
 let manufacturers = ['Glaxo SithKline Pharmaceuticals Ltd', 'Sanofi India Ltd', 'Cipla Ltd', 'Alembic Pharmaceuticals Ltd', 'Glenmark Pharmaceuticals Ltd', 'USV Ltd', 'Cadila Pharmaceuticals Ltd', 'Mankind Pharma Ltd', 'Sun Pharmaceutical Industry', 'Torrent Pharmaceuticals Ltd', "Dr Reddy's Laboratories"]
 let images = ["https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/72cfa26ecaf14e7f8285525d3ffe61f3.jpg", "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/la9aelaydysxuaizrcd5.jpg", "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/tqux8ccp05qx3npvxex9.jpg", "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/epbgofppoky6cermgzyx.png"]
+const cart_url = "https://infinite-river-74709.herokuapp.com/medCart"
 
 const filterBtn = () => {
     const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -39,30 +40,40 @@ const appendMeds = async (data) => {
     data.forEach(med => {
         let card = document.createElement('div')
         card.classList.add('card')
+
         let imgSec = document.createElement('div')
         let img = document.createElement('img')
         img.src = images[Math.floor(Math.random()*images.length)]
         imgSec.classList.add('med_img')
         imgSec.append(img)
+
         let textSec = document.createElement("div")
         textSec.classList.add('med_text')
+
         let head = document.createElement('div')
         head.classList.add('sec1')
+
         let title = document.createElement('h3')
         title.innerText = med.Name
+
         let price = document.createElement('h3')
-        price.innerText = med.mrp
+        price.innerText ="MRP ₹"+med.mrp
+
         head.append(title, price)
+
         let size = document.createElement('p')
         size.innerText = med.pack_size
+
         med.manufacturer = manufacturers[Math.floor(Math.random()*manufacturers.length)]
         let ltd = document.createElement('p')
         ltd.innerText = med.manufacturer
+
         let add = document.createElement('button')
         add.onclick = () => {
             //add to cart
+            add_to_cart(med, cart_url)
         }
-        add.innerText = 'Add'
+        add.innerText = 'ADD'
         add.classList.add('add_to_cart')
         textSec.append(head, size, ltd, add)
         card.append(imgSec, textSec)

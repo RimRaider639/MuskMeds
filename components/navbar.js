@@ -283,7 +283,7 @@ const navbar = () => {
         </div>
         <div id="search-div">
             <input type="text" placeholder="Search for Medicines and Health Products" id="search">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPi-UPlcYVggdodTK1jx3UmRTSQVZZLl2EcMopHBm86L_qyRxbGsbWGIYsM_PPanG6g8&usqp=CAU" alt="lens">
+            <img id="findProd" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPi-UPlcYVggdodTK1jx3UmRTSQVZZLl2EcMopHBm86L_qyRxbGsbWGIYsM_PPanG6g8&usqp=CAU" alt="lens">
         </div>
     </div>
     <div id="mid-right">
@@ -415,3 +415,4 @@ const navbar = () => {
 </div>`;
 };
 export { navbar };
+

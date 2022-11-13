@@ -1,6 +1,6 @@
 const footer = () =>{
     return `<div id="footer-top">
-    <div id="know-us"><h3>Know Us</h3> 
+    <div id="know-us"><h4>Know Us</h4> 
         <a href=""><p>About Us</p></a>
         <a href=""><p>Contact Us</p></a>
         <a href=""><p>Press Coverage</p></a>
@@ -9,7 +9,7 @@ const footer = () =>{
         <a href=""><p>Become a Health Partner</p></a>
         <a href=""><p>Corporate</p></a>
     </div>
-    <div id="policies"> <h3>Our Policies</h3>
+    <div id="policies"> <h4>Our Policies</h4>
         <a href=""><p>Privacy Policy</p></a>
         <a href=""><p>Terms & Conditions</p></a>
         <a href=""><p>Editorial Policy</p></a>
@@ -17,7 +17,7 @@ const footer = () =>{
         <a href=""><p>IP Policy</p></a>
         <a href=""><p>Grievance Redressal Policy</p></a>
     </div>
-    <div id="services"><h3>Our Services </h3>
+    <div id="services"><h4>Our Services </h4>
         <a href=""><p>Order Medicines</p></a>
         <a href=""><p>Book Lab Tests</p></a>
         <a href=""><p>Consult a Doctor</p></a>
@@ -25,7 +25,7 @@ const footer = () =>{
         <a href=""><p>Hindi Articles</p></a>
         <a href=""><p>Care Plan</p></a>
     </div>
-    <div id="connect"><h3>Connect</h3> 
+    <div id="connect"><h4>Connect</h4> 
         <div id="cnt">
             <div id="cntptag">
                 <p>Social Links</p>
@@ -46,7 +46,7 @@ const footer = () =>{
             <div id="signup2">SIGN UP</div>
         </div>
     </div>
-    <div id="apps"><h3>Download</h3>  
+    <div id="apps"><h4>Download</h4>  
         <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKHWO6r0JldZ7xPsevBCb1CGZK6qGjxYCXRw&usqp=CAU" alt=""></div>
     </div>
 </div>
