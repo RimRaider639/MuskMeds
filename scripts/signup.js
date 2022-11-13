@@ -1,3 +1,6 @@
+
+
+///uploading the data for signup after validating
 class User{
         constructor(){
            
@@ -69,3 +72,10 @@ class User{
     signupbtn.addEventListener("click",function(){
       Register()
     });
+
+    ///homepage address
+
+    let home=document.querySelector('#heading img');
+     home.onclick=function(){
+     window.location.href='/muddled-can-9800/home.html'
+    }

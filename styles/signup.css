@@ -190,3 +190,25 @@ a{
   color: teal;
   margin-left: 320px;
 }
+#heading{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background-color: rgb(241, 234, 234);
+}
+#heading img{
+  width: 150px;
+  float: left;
+  cursor: pointer;
+}
+#admin{
+  margin-top: 10px;
+  float: right;
+  border: 1px solid;
+  margin-right: 150px;
+  width: 10%;
+}
+#admin a{
+  float: right;
+  color: blue;
+}
