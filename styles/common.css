@@ -3,3 +3,21 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#navbar{
+    background-color: white;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.add_to_cart{
+    cursor: pointer;
+}
+

@@ -133,6 +133,7 @@
     background-color:rgb(241,244,246) ;
     width: 90%;
     color: black;
+    outline: none;
 }
 #mid-right{
     display: flex;

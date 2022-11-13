@@ -4,6 +4,7 @@ init()
 
 let manufacturers = ['Glaxo SithKline Pharmaceuticals Ltd', 'Sanofi India Ltd', 'Cipla Ltd', 'Alembic Pharmaceuticals Ltd', 'Glenmark Pharmaceuticals Ltd', 'USV Ltd', 'Cadila Pharmaceuticals Ltd', 'Mankind Pharma Ltd', 'Sun Pharmaceutical Industry', 'Torrent Pharmaceuticals Ltd', "Dr Reddy's Laboratories"]
 let images = ["https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/72cfa26ecaf14e7f8285525d3ffe61f3.jpg", "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/la9aelaydysxuaizrcd5.jpg", "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/tqux8ccp05qx3npvxex9.jpg", "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/epbgofppoky6cermgzyx.png"]
+const cart_url = "https://infinite-river-74709.herokuapp.com/medCart"
 
 const filterBtn = () => {
     const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -61,6 +62,7 @@ const appendMeds = async (data) => {
         let add = document.createElement('button')
         add.onclick = () => {
             //add to cart
+            add_to_cart(med, cart_url)
         }
         add.innerText = 'Add'
         add.classList.add('add_to_cart')

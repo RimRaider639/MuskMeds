@@ -11,27 +11,83 @@
 <body>
     <div id="navbar"></div>
     <div id="container">
+        <!-- vertical column with filters-->
         <div id="change">
-            <div id="categories">
-
-            </div>
+            <div id="categories"></div>
+            <!-- filters -->
             <div id="filters">
                 <h4>FILTERS</h4>
                 <hr>
                 <div id="filter_by_brand">
                     <h4>BRANDS</h4>
-                    <input type="text" id="search_brand">
-                    <div id="allBrands"></div>
+                    <input type="text" id="search_brand" placeholder="Search Brands">
+                    <div id="allBrands" class="scroll labels"></div>
                 </div>
-                <div></div>
+                <hr>
+                <div id="filter_by_type">
+                    <h4>PRODUCT FORM</h4>
+                    <input type="text" id="search_type" placeholder="Search Product Form">
+                    <div id="allTypes" class="scroll labels"></div>
+                </div>
+                <hr>
+                <div id="filter_by_gender">
+                    <h4>GENDER</h4>
+                    <div id="allGenders" class="labels"></div>
+                </div>
+                <hr>
+                <div id="filter_by_discount">
+                    <h4>DISCOUNT</h4>
+                    <div id="allDiscounts" class="labels"></div>
+                    <div class="labels">
+                        <div>
+                            <input type="checkbox" name="" id="_lte=10" class="checkbox">
+                            <h5>Less than 10%</h5>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="_gte=9" class="checkbox">
+                            <h5>10% and above</h5>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="_gte=19" class="checkbox">
+                            <h5>20% and above</h5>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="_gte=29" class="checkbox">
+                            <h5>30% and above</h5>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
             
         </div>
         <div>
+            <h2 id="cat_heading"></h2>
+            <div id="show_applied_filters">
+                <span id="cf-txt">CLEAR FILTERS</span>
+            </div>
             <div id="shop_by_category"></div>
-            <div id="sort"></div>
+            <!-- sorting -->
+            <div id="sorting">
+                <p>Sort By</p>
+                <select name="" id="sort">
+                    <option value="rel">Relevance</option>
+                    <option value="rating">Average Customer Rating</option>
+                    <option value="lh">Price: Low to High</option>
+                    <option value="hl">Price: High to Low</option>
+                    <option value="discount">Discount</option>
+                </select>
+            </div>
+            <!-- all products -->
             <div id="products"></div>
-            <div id="page_nav"></div>
+            <!-- page navigation buttons -->
+            <div id="page_nav">
+                <button id="prev" class="pg_btn">Previous</button>
+                <span id="nav_btn"></span>
+                <span id="more"></span>
+                <span id="last"></span>
+                <button id="next" class="pg_btn">Next</button>
+            </div>
         </div>
     </div>
     <div id="footer"></div>

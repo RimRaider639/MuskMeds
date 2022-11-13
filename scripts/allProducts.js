@@ -1,38 +1,56 @@
-import {init, appendProducts, appendLabel, getData, categorizeURL, getBrands, sortNum} from "../components/commonFunc.js"
-import {debounce, searchLabel} from "../components/searchWithDebouncing.js"
+import {init, appendProducts, getData, categorizeURL, LabelType} from "../components/commonFunc.js"
 init()
 
-//key - RvoAlwKvGhnheeG8p5zw0TiSzntiedxc3Od6Cokf
 
 
 let url = "https://infinite-river-74709.herokuapp.com/products?"
 
 let cat = localStorage.getItem('clickedCat') 
+document.getElementById('cat_heading').innerText = cat
+document.querySelector('title').innerText = cat
 url = categorizeURL(url, cat)
-getData(url+"_limit=100", [appendProducts, '#products'], 1)
+getData(url, [appendProducts, '#products'])
 
 
-const showBrands = async () => {
+let brands = new LabelType('brand', 'allBrands', 'search_brand')
+brands.show(url)
+let type = new LabelType('type', 'allTypes', 'search_type')
+type.show(url)
+let gender = new LabelType('gender', 'allGenders')
+gender.show(url)
+// let discounts = new LabelType('discount','allDiscounts')
 
-    let brands = await getBrands(url)
-    brands = sortNum(brands, 'dsc', 'count')
-    appendLabel(brands, "allBrands", url)
-    document.querySelector("#search_brand").oninput = () => {
-        debounce(()=>{
-            searchLabel("#search_brand", brands, 'name', url)
-        }, 1000)
+const sort = document.getElementById('sort')
+sort.onchange = () => {
+    let value = sort.value
+    switch (value){
+        case ('lh'): getData(url+'_sort=mrp&_order=asc&', [appendProducts, '#products']);
+            break;
+        case('hl'): getData(url+'_sort=mrp&_order=desc&', [appendProducts, '#products']);
+            break;
+        case('discount'): getData(url+'_sort=discount&_order=desc&', [appendProducts, '#products']);
+            break;
+        case('rating'): getData(url+'_sort=rating&_order=desc&', [appendProducts, '#products']);
+            break;
+        default: getData(url, [appendProducts, '#products']);
     }
-
 }
-// getBrands(url)
-showBrands()
 
-// let data = async () => {
-//     console.log(await getData('https://api.ods.od.nih.gov/dsld/v8/browse-products/?method=by_keyword&q=Vitamin D'))
-
-// }
-
-// data()
+//discount filters
+// document.querySelectorAll('#filter_by_discount .checkbox')
 
 
+// .forEach(f=>{
+//     let para = ''
+//     f.onchange = () => {
+//         if (f.checked){
+//             para+="discount"+f.id+'&'
+            
+//         } 
+//         getData(url+para+"_limit=100", [appendProducts, '#products'])
+//     }
+// })
+
+
+// console.log(document.querySelector(`#page_nav>button:nth-child(2)`))
 
