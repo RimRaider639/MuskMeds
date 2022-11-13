@@ -1,39 +1,147 @@
+body{
+    background-color:#f6f6f6;
+}
 #container{
     display: flex;
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
 #change{
-    width: 40%;
-    border: 1px solid black;
+    /* width: 20%; */
     padding: 20px 10px;
+    background-color: white;
+
 }
-#filters h4,input, hr{
-    margin-bottom: 5px;
+#filters h4,input, hr, .scroll{
+    margin-bottom: 10px;
 }
-#allBrands{
-    border:1px solid black;
+
+.scroll{
     overflow-y: scroll;
-    height: 400px;
+    height: 300px;
     width: 100%;
     /* padding: 10px; */
 }
-#allBrands>div{
+.labels>div{
     display: flex;
     justify-content: space-between;
 }
-#allBrands h5:nth-child(2){
+.labels h5:nth-child(2){
     flex-grow: 1;
     margin-left: 5px;
+}
+#cat_heading{
+    margin: 20px;
 }
 #products{
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    border: 1px solid black;
 }
 .card{
-    border: 1px solid black;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* text area */
+.card>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    flex-grow: 1;
+}
+/* img div */
+.card>div:nth-child(1){
+    width: 100%;
+    height: 200px;
+    padding: 40px 0;
+}
+.card img{
+    max-width: 100%;
+    height: 150px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+.card h3{
+    font-size: 14px;
+}
+.card p{
+    font-size: 12px;
+    color: #757575;
+    font-weight: 600;
+}
+.card>div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+}
+
+#sorting{
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    position: relative; 
+    width: 25%;
+    
+}
+#sorting p{
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+#show_applied_filters{
+    display: flex;
+}
+#show_applied_filters>span{
+    display: flex;
+}
+#show_applied_filters #cf-txt{
+    display: none;
+}
+.filTags{
+    border: 1px solid rgb(255,111,97);
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+.pg_btn{
+    margin: 10px;
+    padding: 5px;
+    color: black;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+.activePg{
+    color: #FF6F61;
+}
+
+.hidden{
+    display: none;
+}
+
+.offer span{
+    color: green;
+}
+.rating span{
+    background-color: green;
+    color: white
+}
+
+.card>div h3, p{
+    margin-bottom: 10px;
+}
+
+
+#fill {
+  font-variation-settings:
+  'FILL' 1,
+
 }

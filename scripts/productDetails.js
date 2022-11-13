@@ -2,15 +2,9 @@ import { init } from "../components/commonFunc.js";
 
 init()
 
-
-document.getElementById("logo").addEventListener("click",Homepage);
-function Homepage(){
-    window.location.href="./home.html"
-}
-
-const pro= {
-    "Name": "Tata 1mg Glucosamine HCL 1500 mg Tablets for Joint Health with Boswellia Serrata, Collagen Peptide, L-Arginine, and Curcuma Longa",
-    "pack_size": "bottle of 60 tablets",
+const pro={
+    "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/j4vwgeja6thehccimpbs.png",
+    "Name": "Tata 1mg Glucosamine HCL 1500 mg Tablets for Joint Health",
     "rating_count": "284 ratings",
     "rating": 4.1,
     "price": 995,

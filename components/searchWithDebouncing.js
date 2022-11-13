@@ -1,4 +1,4 @@
-import {filter, appendLabel} from "./commonFunc.js"
+import {appendLabel} from "./commonFunc.js"
 
 let id;
 
@@ -9,12 +9,13 @@ const debounce = (func, delay) => {
     id = setTimeout(func, delay)
 }
 
-const searchLabel = (selector, array, attr, baseURL) => {
-    let keyword = document.querySelector(selector).value
-    let res = array.filter((item) => {
+//selector is the selector for appending, id is the selector for search bar
+const searchLabel = (appendId, keywordId, labelTypeObj, attr, baseURL) => {
+    let keyword = document.getElementById(keywordId).value
+    labelTypeObj.filtered = labelTypeObj.labels.filter((item) => {
         return item[attr].toLowerCase().startsWith(keyword.toLowerCase())
     })
-    appendLabel(res, "allBrands", baseURL)
+    appendLabel(labelTypeObj, appendId, baseURL)
 }
 
 export {debounce, searchLabel}
