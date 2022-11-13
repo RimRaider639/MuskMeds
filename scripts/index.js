@@ -30,7 +30,10 @@ window.onload = function(){
 
 
 //------------------------------------------------------carousel
-
+document.getElementById('header').addEventListener("click", ProductPage);
+function ProductPage(){
+  window.location.href="allProducts.html"
+}
 
 
 

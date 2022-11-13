@@ -286,5 +286,4 @@ const filter = (data, attr, value) => {
 }
 
 
-
 export {init, getData, appendProducts, categorizeURL, getBrands, sortNum, sortStr, add_to_cart, filter, appendLabel}
