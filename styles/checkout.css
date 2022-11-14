@@ -1,8 +1,15 @@
 body{
   margin: 0%;
+  background-color: #F8F8F8;
 }
 
+
 /* navbar begin */
+#whole{
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
 
 #navbar {
   display: flex;
@@ -41,19 +48,17 @@ body{
   font-size: 18px;
 }
 
-#whole{
-  display: flex;
-  width: 70%;
-  margin: auto;
-}
+
 
 /* Container */
 #container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid black;
+  border: 0px solid black;
   margin-right: 20px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #second-container{
