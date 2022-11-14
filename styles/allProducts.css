@@ -118,8 +118,14 @@ body{
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+    padding: 0 10px;
 }
 
+#cf-txt{
+    font-size: 12px;
+    margin-left: 20px;
+    color: rgb(255,111,97);
+}
 
 .pg_btn{
     margin: 10px;
