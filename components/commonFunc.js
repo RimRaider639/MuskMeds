@@ -320,7 +320,6 @@ const changeQtd = async (id, url, change='+') => {
     url = url+id
     try{
         let prod = await getData(url)
-        console.log(prod)
         change=='-'?+prod.qtd--:+prod.qtd++
         if (prod.qtd){
             patchCartItems(prod, url)
