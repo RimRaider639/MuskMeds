@@ -8,6 +8,8 @@ const prod_id = localStorage.getItem('productID')
 let product;
 const myFunction = async () => {
     const pro = await getData(prod_url+prod_id)
+    document.querySelector('title').innerText = pro.Name
+
     product = pro
 
     const img = document.querySelector("#container>div img");

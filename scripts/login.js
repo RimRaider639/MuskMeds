@@ -16,6 +16,7 @@ btn.onclick=async ()=>{
       }else{
         if(details.password==password){
             alert('Login successfull');
+            localStorage.setItem('loggedIn', 'true')
             window.location.href='./index.html';
             localStorage.setItem('user_details',JSON.stringify(details))
             

@@ -38,12 +38,24 @@ const init = () => {
     function Homepage(){
         window.location.href="./index.html"
     }
+    document.getElementById('meds').onclick = () => {
+        window.location.href = "./allProducts.html"
+    }
     document.getElementById('login').onclick = () => {
         window.location.href = "./login.html"
     }
     document.getElementById('signup').onclick = () => {
         window.location.href = "signup.html"
     }
+    if (localStorage.getItem('loggedIn')=='true'){
+        let user = JSON.parse(localStorage.getItem('user_details'))
+        document.getElementById('login-signup').innerHTML = "<div id='user'><span>"+user.name+"</span><span id=signOut>Sign Out</span></div>"
+        document.getElementById('signOut').onclick = () => {
+            localStorage.clear()
+            window.location.reload()
+        }
+    }
+    
     document.getElementById('findProd').onclick = () => {
         searchKey("search", PRODUCT_URL, "#products")
     }
@@ -251,8 +263,8 @@ class LabelType {
 }
 
 //to check if an item is already present in cart
-const inCart = async (id) => {
-    const url = 'https://infinite-river-74709.herokuapp.com/cart/'+id
+const inCart = async (id, url) => {
+    url = url+id
 
     try{
         const res = await fetch(url)
@@ -267,7 +279,7 @@ const inCart = async (id) => {
 //add to cart
 const add_to_cart = async (prod, url) => {
     try{
-        const status = await inCart(prod.id)
+        const status = await inCart(prod.id, url)
         if (status){
             changeQtd(prod.id, url)
             return
@@ -320,7 +332,6 @@ const changeQtd = async (id, url, change='+') => {
     url = url+id
     try{
         let prod = await getData(url)
-        console.log(prod)
         change=='-'?+prod.qtd--:+prod.qtd++
         if (prod.qtd){
             patchCartItems(prod, url)
