@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/muddled-can-9800/styles/adminpage.css">
+    <link rel="stylesheet" href="./styles/adminpage.css">
     <title>Admin Inventory</title>
 </head>
 <body>
     <div id="parent">
       <div id="heading">
-         <div><img src="/muddled-can-9800/img/output-onlinepngtools.png" alt=""></div>
+         <div><img src="./img/output-onlinepngtools.png" alt=""></div>
          <div><h2>MUSKmeds store!</h2></div>
       </div>
     <div id="welcome"><p>Welcome <i><span></span>!</i></p></div>
@@ -31,13 +31,38 @@
         <input type="file" id="image" required>
         <label for="brand">brand:</label>
         <input type="text" id="brand" placeholder="brand" required>
-        <label for="email">email:</label>
-        <input type="email" id="email" placeholder="email" required>
+        <label for="stock">Total stock:</label>
+        <input type="number" name="" id="stock" placeholder="Total stock:" required>
+        <label for="gender">Gender:</label>
+        <input type="text" name="" id="gender" placeholder="gender" required>
     </div>
     <button id="add_product">Confirm</button><br>  
     <h3>Your products</h3>
+    <p id="totalproducts">Total no. of products:-<span></span></p>
+    <table id="productstable">
+        <thead>
+            <th>image</th>
+            <th>name</th>
+            <th>size</th>
+            <th>price</th>
+            <th>mrp</th>
+            <th>discount</th>
+            <th>type</th>
+            <th>stock</th>
+            <th>brand</th>
+            <th>Gender</th>
+            <th>Remove</th>
+            <th>update mrp</th>
+            <th>update stock</th>
+        </thead>
+        <tbody></tbody>
+    </table>
     <div id="container"></div>
+    <h3>Orders recieved</h3>
+    <p id="orders">Total orders:-<span></span></p>
+
+    <div id="footer"></div>
 </body>
 </html>
 
-<script src="/muddled-can-9800//scripts/adminpage.js"></script>
+<script type="module" src="./scripts/adminpage.js"></script>

@@ -1,3 +1,6 @@
+
+
+///uploading the data for signup after validating
 class User{
         constructor(){
            
@@ -45,7 +48,7 @@ class User{
             })
             let data=await response.json();
             console.log(data);
-            window.location.href="login.html";
+            window.location.href="./login.html";
             }else{
               alert('Email already exists')
             }
@@ -69,3 +72,10 @@ class User{
     signupbtn.addEventListener("click",function(){
       Register()
     });
+
+    ///homepage address
+
+    let home=document.querySelector('#heading img');
+     home.onclick=function(){
+     window.location.href='./index.html'
+    }

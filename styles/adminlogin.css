@@ -46,3 +46,21 @@ button:hover{
     color: rgba(148, 57, 57, 0.637);
     font-weight: bolder;
 }
+#heading{
+    display: flex;
+    height: auto;
+    width: 30%;
+}
+#heading img{
+    width: 60%;
+    height: auto;
+    float: right;
+    cursor: pointer;
+}
+#heading h2{
+    float: left;
+    color: teal;
+    margin:50px;
+    line-height: 16px;
+    margin-top: 54px;
+}
