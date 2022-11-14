@@ -49,6 +49,7 @@ class Admin{
         let data=await response.json();
         console.log(data);
         alert('Successfully signed up,Proceed to Login')
+        window.location.reload();
         }else{
           alert('Email already exists')
         }
@@ -110,7 +111,17 @@ const checkdata=(data,enteredemail)=>{
        }
     })
 }
+
+///homepage address
+    
+    let home=document.querySelector('#heading img');
+     home.onclick=function(){
+     window.location.href='/muddled-can-9800/home.html'
+    }
+
+
 /////DELETE FUNCION//////
+
 //  let delte =async()=>{
 //     let  response=await fetch('https://infinite-river-74709.herokuapp.com/userData/',{
 //     method:'DELETE',
