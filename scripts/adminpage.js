@@ -247,5 +247,5 @@ window.onload=checkorders();
     
     let home=document.querySelector('#heading img');
      home.onclick=function(){
-     window.location.href='/muddled-can-9800/home.html'
+     window.location.href='./index.html'
     }

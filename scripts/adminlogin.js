@@ -93,7 +93,7 @@ btn.onclick=async ()=>{
         if(details.password==password){
             alert('Login successfull');
             localStorage.setItem('admin_details',JSON.stringify(details))
-            window.location.href='/muddled-can-9800/adminpage.html'
+            window.location.href='./adminpage.html'
         }else{
             alert('Wrong password')
         }
@@ -116,7 +116,7 @@ const checkdata=(data,enteredemail)=>{
     
     let home=document.querySelector('#heading img');
      home.onclick=function(){
-     window.location.href='/muddled-can-9800/home.html'
+     window.location.href='./index.html'
     }
 
 

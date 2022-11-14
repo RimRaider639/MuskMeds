@@ -16,7 +16,7 @@ btn.onclick=async ()=>{
       }else{
         if(details.password==password){
             alert('Login successfull');
-            window.location.href='/muddled-can-9800/home.html';
+            window.location.href='./index.html';
             localStorage.setItem('user_details',JSON.stringify(details))
             
         }else{
@@ -41,7 +41,7 @@ const checkdata=(data,enteredemail)=>{
     
     let home=document.querySelector('#heading img');
      home.onclick=function(){
-     window.location.href='/muddled-can-9800/home.html'
+     window.location.href='./index.html'
     }
 
 

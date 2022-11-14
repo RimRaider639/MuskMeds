@@ -48,7 +48,7 @@ class User{
             })
             let data=await response.json();
             console.log(data);
-            window.location.href="login.html";
+            window.location.href="./login.html";
             }else{
               alert('Email already exists')
             }
@@ -77,5 +77,5 @@ class User{
 
     let home=document.querySelector('#heading img');
      home.onclick=function(){
-     window.location.href='/muddled-can-9800/home.html'
+     window.location.href='./index.html'
     }
