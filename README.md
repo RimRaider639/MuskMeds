@@ -5,9 +5,9 @@
 
 ## Contributors:
 1) Madhurima Poddar (Team lead, dynamic products & single product page)
-2) Kanwarpal (Landing page, navbar, footer)
+2) Kanwarpal Singh(Landing page, navbar, footer)
 3) Umerbin Farooq (Login, Signup, Admin panel)
-4) (Cart page)
+4) Shubham Dubey (Cart page)
 
 ## Landing Page
 ![image](https://user-images.githubusercontent.com/112859531/222207347-892b0063-c0b9-4b9d-9cde-af2bc79831ca.png)
