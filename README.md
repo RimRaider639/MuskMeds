@@ -4,10 +4,10 @@
 ![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ## Contributors:
-1) Madhurima Poddar (Team lead, dynamic products & single product page)
-2) Kanwarpal Singh(Landing page, navbar, footer)
-3) Umerbin Farooq (Login, Signup, Admin panel)
-4) Shubham Dubey (Cart page)
+1) Madhurima Poddar (team lead, dynamic products & single product page)
+2) Kanwarpal Singh (landing page, navbar, footer)
+3) Umerbin Farooq (login, Signup, Admin panel)
+4) Shubham Dubey (cart page)
 
 ## Landing Page
 ![image](https://user-images.githubusercontent.com/112859531/222207347-892b0063-c0b9-4b9d-9cde-af2bc79831ca.png)
