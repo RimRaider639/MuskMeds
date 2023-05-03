@@ -27,6 +27,10 @@ An Ecommerce website for medical and health products.
 
 ![image](https://user-images.githubusercontent.com/112859531/235893240-a0c186d9-7053-4bb0-8a37-74902819d987.png)
 
+- You can sort and filter by brands and product form simultaneously.
+- Search brand and product form labels (debouncing).
+- Add products to cart directly from here.
+
 #### Examples:
 
 ##### Vitamins & Supplements
@@ -36,6 +40,8 @@ An Ecommerce website for medical and health products.
 ##### Protien Supplements
 
 ![image](https://user-images.githubusercontent.com/112859531/235893975-2a1a1a9e-274e-4b37-9de5-f91e3d4e20d8.png)
+
+
 
 
 
