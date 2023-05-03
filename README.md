@@ -46,11 +46,15 @@ An Ecommerce website for medical and health products.
 
 ### Single Product Page
 
-- View more details and add the product to cart.
+- View more details and add the product to cart with required quantity.
 
 ![image](https://user-images.githubusercontent.com/112859531/235897151-987e26f4-b338-456a-9008-df5c98cbb949.png)
 
+### Cart Page
 
+- Modify quantity, remove items and proceed to checkout.
+
+![image](https://user-images.githubusercontent.com/112859531/235897611-e47ca063-e509-4a46-860a-12e6934d14ce.png)
 
 
 
