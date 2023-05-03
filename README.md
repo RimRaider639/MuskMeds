@@ -63,8 +63,18 @@ An Ecommerce website for medical and health products.
 
 ![image](https://user-images.githubusercontent.com/112859531/235897611-e47ca063-e509-4a46-860a-12e6934d14ce.png)
 
+### Authentication
 
+#### Login Page
 
+##### As User: 
+![image](https://user-images.githubusercontent.com/112859531/235898711-76d704cf-c03b-4a3f-b976-3098e09a44c5.png)
 
+##### As Admin: 
+![image](https://user-images.githubusercontent.com/112859531/235898916-360d7e27-3a79-49aa-96a2-3555a23ade65.png)
+
+#### Signup Page
+
+![image](https://user-images.githubusercontent.com/112859531/235898832-06fab603-ab67-472f-8ac0-f0d2619c4c18.png)
 
 
