@@ -22,9 +22,14 @@ An Ecommerce website for medical and health products.
 ![image](https://user-images.githubusercontent.com/112859531/222207438-5e6e400f-c7fb-4896-af5c-e0e0535ce9f4.png)
 ![image](https://user-images.githubusercontent.com/112859531/222207955-55a796ce-ef14-4f30-9c12-bd7a60459f8e.png)
 
-## Authentication
-### Login
-- The navbar indicates whether you are logged in or not.
+### Products Page
+- All the options in dropdowns work because the products page is being dynamically generated along with it's brand and type labels (filters) based on the category filter you choose.
+
+![image](https://user-images.githubusercontent.com/112859531/235893240-a0c186d9-7053-4bb0-8a37-74902819d987.png)
+
+#### Examples:
+
+##### 
 
 
 
