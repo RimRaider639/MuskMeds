@@ -27,11 +27,14 @@ An Ecommerce website for medical and health products.
 
 ![image](https://user-images.githubusercontent.com/112859531/235893240-a0c186d9-7053-4bb0-8a37-74902819d987.png)
 
-- You can sort and filter by brands and product form simultaneously.
+- You can sort and filter by brands, product form and gender simultaneously.
 - Search brand and product form labels (debouncing).
 - Add products to cart directly from here.
+- Clear filters from the top.
 
-#### Examples:
+![image](https://user-images.githubusercontent.com/112859531/235896753-d42b0b84-c433-476d-af3f-132479472990.png)
+
+#### Example Categories:
 
 ##### Vitamins & Supplements
 
