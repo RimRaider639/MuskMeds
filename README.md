@@ -80,4 +80,9 @@ An Ecommerce website for medical and health products.
 
 ![image](https://user-images.githubusercontent.com/112859531/235898832-06fab603-ab67-472f-8ac0-f0d2619c4c18.png)
 
+### Admin Panel
+- Add and modify products. You can see only the products you added from your admin account.
+
+![image](https://user-images.githubusercontent.com/112859531/235899926-00c9b6e8-2aa5-4f88-a2cd-b622f4795c89.png)
+
 
