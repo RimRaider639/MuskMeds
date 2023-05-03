@@ -77,7 +77,7 @@ An Ecommerce website for medical and health products.
 ##### As User: 
 ![image](https://user-images.githubusercontent.com/112859531/235898711-76d704cf-c03b-4a3f-b976-3098e09a44c5.png)
 
-- Indicates in the navbar when logged in.\
+- Indicates in the navbar when logged in.
 
 ![image](https://user-images.githubusercontent.com/112859531/235899311-15dca368-afdc-4ee0-9932-3a2fff490680.png)
 
