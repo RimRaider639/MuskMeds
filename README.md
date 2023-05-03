@@ -84,6 +84,9 @@ An Ecommerce website for medical and health products.
 - Add and modify products. You can see only the products you added from your admin account.
 
 ![image](https://user-images.githubusercontent.com/112859531/235899926-00c9b6e8-2aa5-4f88-a2cd-b622f4795c89.png)
+
+- On adding products:
+
 ![image](https://user-images.githubusercontent.com/112859531/235900310-20d6ce20-999c-4d52-b8bc-4f2acc50e9d9.png)
 
 
