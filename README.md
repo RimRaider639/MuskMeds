@@ -12,7 +12,7 @@ An Ecommerce website for medical and health products.
 4) Shubham Dubey (cart page)
 
 ## Features:
-- Login/Register, sticky & functional navbar, landing page
+- Login/Register, sticky & functional navbar, admin panel, landing page
 - Products page, functional category links, cart (my tasks)
 - Dynamic filtering, sorting, pagination (my tasks)
 - Searchbars, fetching medicines by first letter (my tasks)
