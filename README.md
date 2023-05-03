@@ -6,10 +6,10 @@
 An Ecommerce website for medical and health products.
 
 ## Contributors:
-1) Madhurima Poddar (team lead, dynamic products & single product page)
-2) Kanwarpal Singh (landing page, navbar, footer)
-3) Umerbin Farooq (login, Signup, Admin panel)
-4) Shubham Dubey (cart page)
+***Team Lead***: Madhurima Poddar (dynamic products & single product page, all medicines page, backend setup)
+1) Kanwarpal Singh (landing page, navbar, footer)
+2) Umerbin Farooq (login, Signup, Admin panel)
+3) Shubham Dubey (cart page)
 
 ## Features:
 - Login/Register, sticky & functional navbar, admin panel, landing page
@@ -49,6 +49,13 @@ An Ecommerce website for medical and health products.
 - View more details and add the product to cart with required quantity.
 
 ![image](https://user-images.githubusercontent.com/112859531/235897151-987e26f4-b338-456a-9008-df5c98cbb949.png)
+
+### All Medicines Page
+
+- Filter the medicines by their first letter, get sorted results.
+
+![image](https://user-images.githubusercontent.com/112859531/235898069-8bcb0001-eea9-46b4-bbbd-d71854182934.png)
+
 
 ### Cart Page
 
