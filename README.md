@@ -10,7 +10,7 @@
 4) Shubham Dubey (cart page)
 
 ## Features:
-- Login/Register, Sticky & functional navbar, admin panel, Landing page
+- Login/Register, sticky & functional navbar, landing page
 - Products page, functional category links, cart (my tasks)
 - Dynamic filtering, sorting, pagination (my tasks)
 - Searchbars, fetching medicines by first letter (my tasks)
