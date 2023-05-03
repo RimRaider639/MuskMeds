@@ -9,6 +9,12 @@
 3) Umerbin Farooq (login, Signup, Admin panel)
 4) Shubham Dubey (cart page)
 
+## Features:
+- Login/Register, Sticky & functional navbar, admin panel, Landing page
+- Products page, functional category links, cart (my tasks)
+- Dynamic filtering, sorting, pagination (my tasks)
+- Searchbars, fetching medicines by first letter (my tasks)
+
 ## Landing Page
 ![image](https://user-images.githubusercontent.com/112859531/222207347-892b0063-c0b9-4b9d-9cde-af2bc79831ca.png)
 ![image](https://user-images.githubusercontent.com/112859531/222207438-5e6e400f-c7fb-4896-af5c-e0e0535ce9f4.png)
