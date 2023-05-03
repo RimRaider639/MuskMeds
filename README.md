@@ -8,7 +8,7 @@
 An Ecommerce website for medical and health products.
 
 ## Contributors:
-***Team Lead***: Madhurima Poddar (dynamic products & single product page, all medicines page, backend setup)
+***Team Lead***: Madhurima Poddar (dynamic products & single product page, all medicines page, searchbar, backend setup)
 1) Kanwarpal Singh (landing page, navbar, footer)
 2) Umerbin Farooq (login, Signup, Admin panel)
 3) Shubham Dubey (cart page)
@@ -58,6 +58,11 @@ An Ecommerce website for medical and health products.
 
 ![image](https://user-images.githubusercontent.com/112859531/235898069-8bcb0001-eea9-46b4-bbbd-d71854182934.png)
 
+### Search Products
+
+- Appends products with similar keywords as your search query.
+
+![image](https://user-images.githubusercontent.com/112859531/235901889-65860189-4409-4894-afed-b821a31e9302.png)
 
 ### Cart Page
 
