@@ -22,5 +22,10 @@ An Ecommerce website for medical and health products.
 ![image](https://user-images.githubusercontent.com/112859531/222207438-5e6e400f-c7fb-4896-af5c-e0e0535ce9f4.png)
 ![image](https://user-images.githubusercontent.com/112859531/222207955-55a796ce-ef14-4f30-9c12-bd7a60459f8e.png)
 
+## Authentication
+### Login
+- The navbar indicates whether you are logged in or not.
+
+
 
 
